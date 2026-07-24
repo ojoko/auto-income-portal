@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & OGP Meta Tags -->
+    <title>OmniTools Hub - 無料の即時Web開発・テキスト・SEO便利ツール集</title>
+    <meta name="description" content="全ツール完全無料で登録不要！SEO＆OGPタグ作成プレビュー、高画質QRコード生成、JSON整形、文字数カウント、安全なパスワード作成などWeb制作や日常生活に役立つ万能Webツールポータル。">
+    <meta name="keywords" content="無料Webツール, OGPプレビュー, QRコード生成, JSON整形, パスワード生成, SEOツール, 文字数カウント">
+    <meta name="author" content="OmniTools Hub">
+    
+    <!-- Open Graph / Facebook / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="OmniTools Hub - 無料の即時Web開発・SEO便利ツール集">
+    <meta property="og:description" content="全ツール完全無料で登録不要！SEO＆OGP作成、QRコード生成、JSON整形、文字数カウントなど便利ツールがブラウザで即座に使えます。">
+    <meta property="og:site_name" content="OmniTools Hub">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="OmniTools Hub - 無料Web便利ツール集">
+    <meta name="twitter:description" content="登録不要・完全無料の万能Webツール＆SEOポータル。ブラウザ上で即時動作。">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "OmniTools Hub",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "All",
+      "description": "登録不要・完全無料の即時Webツール＆SEO最適化ポータルサイト。",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#" class="brand-logo">
+                <div class="logo-icon">⚡</div>
+                <span class="logo-text">OmniTools <span class="badge-tag">HUB</span></span>
+            </a>
+            
+            <nav class="main-nav">
+                <a href="#tools" class="nav-link active">🛠️ ツール一覧</a>
+                <a href="#affiliates" class="nav-link">⭐ おすすめ活用ツール</a>
+                <button class="btn btn-outline btn-sm" id="supportModalBtn">☕ 開発者を支援</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Top Banner Ad Area (Header Ad Slot) -->
+    <div class="container ad-banner-container">
+        <div class="ad-slot ad-header" data-ad-slot="header-728x90">
+            <div class="ad-placeholder-content">
+                <span class="ad-badge">スポンサーリンク / 広告</span>
+                <p class="ad-text">ここにGoogle AdSense等のレスポンシブバナー広告が表示されます</p>
+                <div class="ad-dimensions">推奨サイズ: 728x90 (PC) / 320x100 (SP)</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <span class="hero-chip">✨ 全ツール無料・会員登録不要・即時動作</span>
+            <h1 class="hero-title">日常作業とWeb開発を<br><span class="text-gradient">スマートに効率化する</span>万能ツールポータル</h1>
+            <p class="hero-subtitle">ブラウザ上で安全＆爆速で処理。データは外部に送信されずローカル完結。</p>
+        </div>
+    </section>
+
+    <!-- Main Content Grid -->
+    <main class="container main-layout" id="tools">
+        
+        <!-- Main Tool Workspace (Left/Center Column) -->
+        <div class="tool-workspace">
+            
+            <!-- Tool Selection Navigation Tabs -->
+            <div class="tool-tabs">
+                <button class="tab-btn active" data-target="ogp-tool">
+                    <span class="tab-icon">🌐</span> SEO & OGP プレビュー
+                </button>
+                <button class="tab-btn" data-target="qr-tool">
+                    <span class="tab-icon">📱</span> QRコード作成
+                </button>
+                <button class="tab-btn" data-target="text-json-tool">
+                    <span class="tab-icon">📝</span> テキスト & JSON整形
+                </button>
+                <button class="tab-btn" data-target="pass-tool">
+                    <span class="tab-icon">🔐</span> パスワード生成
+                </button>
+            </div>
+
+            <!-- TOOL 1: SEO & OGP Generator & Live Preview -->
+            <section class="tool-panel active" id="ogp-tool">
+                <div class="panel-header">
+                    <h2>🌐 SEO & OGP メタタグ作成 ＆ リアルタイムプレビュー</h2>
+                    <p>タイトルと説明文を入力すると、Google検索・X (旧Twitter) での表示イメージをリアルタイム確認し、HTMLタグをワンクリックで取得できます。</p>
+                </div>
+
+                <div class="ogp-grid">
+                    <div class="ogp-inputs">
+                        <div class="form-group">
+                            <label for="ogTitle">ページタイトル (Title)</label>
+                            <input type="text" id="ogTitle" class="form-control" placeholder="例: 爆速で使えるWeb便利ツール集 | OmniTools Hub">
+                            <span class="char-count-hint" id="ogTitleCount">0 / 60文字 (推奨: 30〜40文字)</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ogDesc">説明文 (Meta Description)</label>
+                            <textarea id="ogDesc" class="form-control" rows="3" placeholder="例: 会員登録不要で使える全機能無料のWebツール集。SEO確認、QR作成、JSON整形など日常作業を効率化します。"></textarea>
+                            <span class="char-count-hint" id="ogDescCount">0 / 160文字 (推奨: 80〜120文字)</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ogUrl">サイトURL</label>
+                            <input type="url" id="ogUrl" class="form-control" placeholder="https://example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ogImage">OGP画像URL (1200x630px 推奨)</label>
+                            <input type="url" id="ogImage" class="form-control" placeholder="https://example.com/ogp.png">
+                        </div>
+                    </div>
+
+                    <div class="ogp-previews">
+                        <!-- Google Search Preview -->
+                        <div class="preview-card google-preview">
+                            <div class="preview-header">🔍 Google 検索結果プレビュー</div>
+                            <div class="google-snippet">
+                                <div class="google-site-name" id="prevGoogleUrl">https://example.com</div>
+                                <div class="google-title" id="prevGoogleTitle">ページタイトルがここに表示されます</div>
+                                <div class="google-desc" id="prevGoogleDesc">メタ説明文がここに表示されます。検索ユーザーにクリックされやすい魅力的で正確な文章を記述しましょう。</div>
+                            </div>
+                        </div>
+
+                        <!-- Twitter/X Card Preview -->
+                        <div class="preview-card twitter-preview">
+                            <div class="preview-header">🐦 X (Twitter) カードプレビュー (Summary Large Image)</div>
+                            <div class="twitter-card">
+                                <div class="twitter-img-box" id="prevTwitterImgBox">
+                                    <span class="img-placeholder-text">OGP Image (1200 x 630)</span>
+                                </div>
+                                <div class="twitter-card-body">
+                                    <div class="twitter-domain" id="prevTwitterDomain">example.com</div>
+                                    <div class="twitter-title" id="prevTwitterTitle">ページタイトル</div>
+                                    <div class="twitter-desc" id="prevTwitterDesc">説明文</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Code Generator Box -->
+                <div class="code-box-wrapper">
+                    <div class="code-box-header">
+                        <span>📋 自動生成された Meta タグ HTML</span>
+                        <button class="btn btn-primary btn-sm" id="copyOgpCodeBtn">コピーする</button>
+                    </div>
+                    <pre class="code-display"><code id="ogpCodeResult"></code></pre>
+                </div>
+            </section>
+
+            <!-- TOOL 2: High-Quality QR Code Generator -->
+            <section class="tool-panel" id="qr-tool">
+                <div class="panel-header">
+                    <h2>📱 高画質 QRコード 即時生成</h2>
+                    <p>URLやテキストを入力するだけで、スマホで読み取れる高画質QRコードをリアルタイムで生成。画像としてダウンロードできます。</p>
+                </div>
+
+                <div class="qr-grid">
+                    <div class="qr-inputs">
+                        <div class="form-group">
+                            <label for="qrInput">変換したいURLまたはテキスト</label>
+                            <textarea id="qrInput" class="form-control" rows="3" placeholder="https://example.com または テキストを入力"></textarea>
+                        </div>
+                        <div class="form-group-row">
+                            <div class="form-group">
+                                <label for="qrSize">サイズ (px)</label>
+                                <select id="qrSize" class="form-control">
+                                    <option value="200">200 x 200</option>
+                                    <option value="300" selected>300 x 300</option>
+                                    <option value="500">500 x 500 (高画質)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="qrColor">QRの色</label>
+                                <input type="color" id="qrColor" value="#000000" class="form-control color-picker">
+                            </div>
+                            <div class="form-group">
+                                <label for="qrBgColor">背景色</label>
+                                <input type="color" id="qrBgColor" value="#ffffff" class="form-control color-picker">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="qr-output-card">
+                        <div class="qr-preview-box" id="qrCanvasBox">
+                            <img id="qrImg" src="" alt="生成されたQRコード" style="display:none;">
+                            <div id="qrPlaceholder" class="qr-placeholder-active">URLを入力すると即時生成されます</div>
+                        </div>
+                        <button class="btn btn-primary w-100" id="downloadQrBtn" disabled>💾 QRコードをダウンロード</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TOOL 3: Text & JSON Formatter Suite -->
+            <section class="tool-panel" id="text-json-tool">
+                <div class="panel-header">
+                    <h2>📝 テキスト整形 ＆ JSONバリデータ</h2>
+                    <p>文字数・行数・バイト数の高精度カウント、大文字/小文字変換、JSONの自動整列と構文エラーチェックを行います。</p>
+                </div>
+
+                <div class="text-tool-controls">
+                    <div class="stat-chips">
+                        <div class="chip"><span class="chip-label">文字数(空白含む):</span> <strong id="statCharCount">0</strong></div>
+                        <div class="chip"><span class="chip-label">文字数(空白除く):</span> <strong id="statCharNoSpace">0</strong></div>
+                        <div class="chip"><span class="chip-label">行数:</span> <strong id="statLineCount">0</strong></div>
+                        <div class="chip"><span class="chip-label">バイト数 (UTF-8):</span> <strong id="statByteCount">0</strong></div>
+                    </div>
+                    
+                    <div class="action-btn-group">
+                        <button class="btn btn-outline btn-sm" id="btnFormatJson">✨ JSON整形・検証</button>
+                        <button class="btn btn-outline btn-sm" id="btnMinifyJson">⚡ JSON圧縮</button>
+                        <button class="btn btn-outline btn-sm" id="btnUpper">A-Z 全大文字</button>
+                        <button class="btn btn-outline btn-sm" id="btnLower">a-z 全小文字</button>
+                        <button class="btn btn-outline btn-sm" id="btnClearText">🗑️ クリア</button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="textCoreInput" class="form-control code-font" rows="10" placeholder="テキストまたはJSONデータをここに入力してください..."></textarea>
+                </div>
+                <div id="jsonStatusAlert" class="alert-status" style="display:none;"></div>
+            </section>
+
+            <!-- TOOL 4: Secure Password Generator -->
+            <section class="tool-panel" id="pass-tool">
+                <div class="panel-header">
+                    <h2>🔐 安全なパスワード自動生成</h2>
+                    <p>暗号学的に安全な乱数（Crypto API）を使用して、推測されにくい強力なパスワードを一瞬で生成します。</p>
+                </div>
+
+                <div class="pass-grid">
+                    <div class="pass-options">
+                        <div class="form-group">
+                            <label for="passLength">パスワードの長さ: <strong id="passLengthVal">16</strong>文字</label>
+                            <input type="range" id="passLength" min="8" max="64" value="16" class="form-range">
+                        </div>
+
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="chkUpper" checked> 英大文字 (A-Z)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="chkLower" checked> 英小文字 (a-z)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="chkNum" checked> 数字 (0-9)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="chkSym" checked> 記号 (!@#$%^&*)
+                            </label>
+                        </div>
+                        
+                        <button class="btn btn-primary w-100" id="btnGenPass">🎲 パスワードを生成</button>
+                    </div>
+
+                    <div class="pass-result-box">
+                        <label>生成結果</label>
+                        <div class="pass-display-wrapper">
+                            <input type="text" id="passResult" class="form-control code-font font-lg" readonly placeholder="パスワードがここに表示されます">
+                            <button class="btn btn-secondary" id="btnCopyPass">コピー</button>
+                        </div>
+                        <div class="pass-strength-bar">
+                            <div class="strength-fill" id="strengthFill" style="width: 80%;"></div>
+                        </div>
+                        <span class="strength-label" id="strengthLabel">強度: 高（推奨）</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- In-Content Middle Ad Slot -->
+            <div class="ad-slot ad-middle" data-ad-slot="middle-native">
+                <div class="ad-placeholder-content">
+                    <span class="ad-badge">スポンサーリンク / 広告</span>
+                    <p class="ad-text">ツール実行結果の直下に配置される高インプレッション広告エリア</p>
+                    <div class="ad-dimensions">インフィード・レスポンシブ広告推奨</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sidebar / Right Column (Affiliates & Sidebar Ad) -->
+        <aside class="sidebar-layout">
+            
+            <!-- Sidebar Ad Slot -->
+            <div class="ad-slot ad-sidebar" data-ad-slot="sidebar-300x250">
+                <div class="ad-placeholder-content">
+                    <span class="ad-badge">広告</span>
+                    <p class="ad-text">サイドバー枠 (300x250 / レスポンシブ)</p>
+                </div>
+            </div>
+
+            <!-- Affiliate Recommendation Showcase Section -->
+            <div class="affiliate-section" id="affiliates">
+                <div class="section-title-sm">⭐ 開発者・ブロガーおすすめ厳選サービス</div>
+                <p class="affiliate-disclosure">※当サイトはアフィリエイト広告を含んでいます。</p>
+                
+                <div class="affiliate-cards-list">
+                    <!-- Card 1: Hosting -->
+                    <div class="aff-card">
+                        <div class="aff-card-header">
+                            <span class="aff-badge">0円〜利用可能</span>
+                            <h3>Vercel & Cloudflare Pages</h3>
+                        </div>
+                        <p class="aff-desc">超爆速なWebツールやポータルサイトを全自動・無料で世界中に公開できる最強のホスティング環境。</p>
+                        <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm w-100 aff-link">詳細・無料登録を見る ↗</a>
+                    </div>
+
+                    <!-- Card 2: Domain -->
+                    <div class="aff-card">
+                        <div class="aff-card-header">
+                            <span class="aff-badge">格安ドメイン</span>
+                            <h3>お名前.com / ムームードメイン</h3>
+                        </div>
+                        <p class="aff-desc">独自ドメインを取得してWebサイトのSEO評価を爆発的に高める。年額数百円から取得可能。</p>
+                        <a href="https://a8.net" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm w-100 aff-link">独自ドメインを検索 ↗</a>
+                    </div>
+
+                    <!-- Card 3: VPN / Security -->
+                    <div class="aff-card">
+                        <div class="aff-card-header">
+                            <span class="aff-badge font-accent">人気No.1</span>
+                            <h3>NordVPN / MillenVPN</h3>
+                        </div>
+                        <p class="aff-desc">フリーWi-Fiでも安全に作業。通信暗号化と高速通信を兼ね備えたWeb開発・リモートワークの必需品。</p>
+                        <a href="https://a8.net" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm w-100 aff-link">割引キャンペーンを見る ↗</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ad Switcher Controller for Testing -->
+            <div class="dev-ad-toggle-card">
+                <h4>⚙️ 収益化・広告枠設定ガイド</h4>
+                <p>Google AdSenseの審査通過後、<code>index.html</code>の広告タグを本番コードに置き換えるだけで完了します。</p>
+                <button class="btn btn-outline btn-xs w-100" id="toggleAdPreviewBtn">広告枠枠線 表示/非表示 切り替え</button>
+            </div>
+
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-info">
+                <div class="footer-logo">⚡ OmniTools HUB</div>
+                <p>完全無料・ブラウザ完結型の万能Webツール＆SEO最適化ポータル。</p>
+            </div>
+            <div class="footer-links">
+                <a href="#tools">ツール一覧</a>
+                <a href="#affiliates">おすすめアフィリエイト</a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2026 OmniTools Hub. All rights reserved. (Cost: ¥0/mo)
+            </div>
+        </div>
+    </footer>
+
+    <!-- Support Modal -->
+    <div class="modal-overlay" id="supportModal" style="display: none;">
+        <div class="modal-card">
+            <button class="modal-close" id="closeModalBtn">&times;</button>
+            <h3>☕ 開発者をサポート</h3>
+            <p>OmniTools Hubの全ツールは完全無料・無制限でご利用いただけます。<br>もしツールがお役に立ちましたら、継続的な開発と運営の応援をお願いいたします！</p>
+            <div class="support-options">
+                <a href="https://buymeacoffee.com" target="_blank" class="btn btn-primary w-100 mb-2">☕ Buy Me a Coffee で応援</a>
+                <a href="https://amazon.co.jp" target="_blank" class="btn btn-secondary w-100">🎁 Amazonほしい物リスト</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Link -->
+    <script src="app.js"></script>
+</body>
+</html>
